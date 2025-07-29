@@ -10,6 +10,7 @@ dist/
 
 # Data directory (user's documents)
 data/
+claude
 
 # Test data directory (generated test documents)
 test-data/
