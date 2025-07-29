@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample HTML document for testing MCP document server HTML processing capabilities">
+    <meta name="keywords" content="html, test, mcp, document, server, processing">
+    <title>Sample HTML Document - MCP Testing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .highlight { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <h1>Sample HTML Document</h1>
+    
+    <h2>Purpose</h2>
+    <p>This HTML document is designed to test the <strong>HTML processing capabilities</strong> of the MCP document server.</p>
+    
+    <h2>Testing Areas</h2>
+    <ul>
+        <li>HTML tag removal and text extraction</li>
+        <li>Metadata extraction from meta tags</li>
+        <li>Title and heading structure parsing</li>
+        <li>Content sanitization and cleanup</li>
+    </ul>
+    
+    <h2>Content Structure</h2>
+    <p>The HTML processor should extract clean text content while preserving semantic meaning and removing:</p>
+    <ol>
+        <li>Script tags and JavaScript code</li>
+        <li>Style tags and CSS rules</li>
+        <li>HTML markup and formatting tags</li>
+        <li>Comments and non-content elements</li>
+    </ol>
+    
+    <div class="highlight">
+        <p>This highlighted section tests nested element processing and text extraction from styled content.</p>
+    </div>
+    
+    <script>
+        // This script should be removed during processing
+        console.log("This JavaScript should not appear in the extracted text");
+    </script>
+    
+    <p>The extracted text should be clean, readable, and suitable for full-text search indexing.</p>
+</body>
+</html>

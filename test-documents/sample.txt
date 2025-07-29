@@ -1,0 +1,12 @@
+This is a sample text document for testing the MCP document server.
+
+It contains multiple paragraphs to test the text processing capabilities.
+The document indexing system should be able to extract and search this content effectively.
+
+Key features to test:
+- Full-text search
+- Document metadata extraction
+- Content indexing with Lunr.js
+- MCP protocol integration
+
+This document helps verify that the DocumentProcessor can handle plain text files correctly.

@@ -1,0 +1,49 @@
+{
+  "name": "mcp-document-server",
+  "version": "1.0.0",
+  "description": "MCP server for document indexing and search",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-document-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector tsx src/index.ts",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "document",
+    "search",
+    "index",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "chokidar": "^3.5.3",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "lunr": "^2.3.9",
+    "mammoth": "^1.6.0",
+    "marked": "^12.0.0",
+    "nanoid": "^5.0.6",
+    "pdf-extraction": "^1.0.2",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/lunr": "^2.3.7",
+    "@types/node": "^20.10.6",
+    "@types/pdf-parse": "^1.1.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

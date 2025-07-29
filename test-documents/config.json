@@ -1,0 +1,36 @@
+{
+  "name": "MCP Document Server Configuration",
+  "version": "1.0.0",
+  "features": {
+    "search": {
+      "enabled": true,
+      "engine": "lunr",
+      "indexing": {
+        "maxContentLength": 10000,
+        "supportedFormats": ["txt", "md", "pdf", "docx", "html", "json"]
+      }
+    },
+    "storage": {
+      "basePath": "./data",
+      "compression": false,
+      "backups": true
+    }
+  },
+  "server": {
+    "name": "document-index-server",
+    "protocol": "mcp",
+    "tools": [
+      "add_document",
+      "search_documents", 
+      "get_document",
+      "list_documents",
+      "update_document",
+      "delete_document"
+    ]
+  },
+  "performance": {
+    "searchResultLimit": 50,
+    "indexRebuildThreshold": 1000,
+    "cacheEnabled": true
+  }
+}
