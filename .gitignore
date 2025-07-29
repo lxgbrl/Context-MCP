@@ -10,10 +10,16 @@ dist/
 
 # Data directory (user's documents)
 data/
-claude
 
 # Test data directory (generated test documents)
 test-data/
+
+# Claude CLI symlinks and binaries
+claude
+claude-*
+
+# Claude Code directory
+.claude/
 
 # Environment variables
 .env
